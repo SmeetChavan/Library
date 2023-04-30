@@ -1,0 +1,45 @@
+@import "colors";
+
+.book{
+    width: 300px;
+    height: 200px;
+    background-color: $grey;
+    border-radius: 30px;
+
+    padding: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .index{
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    > .title{
+        font-size: 1.3rem;
+        font-weight: bolder;
+        color: $red;
+    }
+
+    > .author{
+        display: flex;
+        gap: 3px;
+        font-style: italic;
+        color: $dark;
+    }
+
+    > .delete > button{
+        margin-top: 15px;
+        padding: 0.4rem;
+        background-color: $red;
+        color: white;
+        font-weight: bold;
+
+        outline: none;
+        border: 0.2px solid grey;
+
+        border-radius: 12px;
+    }
+}

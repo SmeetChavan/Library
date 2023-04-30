@@ -1,0 +1,103 @@
+@import "colors";
+
+.register > form {
+
+    width: 60%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 30px;
+
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , 0.129);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    > h3{
+        margin-top: 3px;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        font-weight: 200;
+    }
+
+    > div{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        > label{
+            width: 100px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        > input{
+            padding: 0.5rem;
+            border-radius: 1rem;
+            outline: none;
+            border: 0.1px solid grey;
+        }
+    }
+
+    > button{
+
+        width: 40%;
+        margin-top: 5rem;
+
+        padding: 0.7rem;
+        border-radius: 30px;
+        color: white;
+        font-weight: bolder;
+        background-color: $red;
+
+        &:hover{
+            color: $red;
+            background-color: white;
+        }
+
+    }
+
+    > a {
+        color: $red;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .register > form{
+
+        width: 90%;
+        height: 90vh;
+
+        > div{
+
+            flex-direction: column;
+            gap: 3px;
+    
+            > label{
+                width: 1px;
+                margin: auto;
+                font-size: 0.7rem;
+
+                position: relative;
+                right: 20px;
+            }
+    
+            > input{
+                padding: 0.4rem;
+                width: 90%;
+            }
+        }
+
+        > button{
+            padding: 0.3rem;
+        }
+    }
+
+}
